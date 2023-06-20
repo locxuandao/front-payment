@@ -1,6 +1,7 @@
 import classNames from "classnames/bind";
-import { Grid } from "@mui/material";
 import { Logo } from "app/components/Logo";
+import { ActionHeader } from "app/components/ActionHeader";
+import { ServiceHeader } from "app/components/ServiceHeader";
 
 import styles from "./HeaderWrapper.module.scss";
 
@@ -8,10 +9,16 @@ const cx = classNames.bind(styles);
 
 export const HeaderWrapper = () => {
   return (
-    <Grid className={cx("container")} container>
-      <Grid className={cx("grid-item", "logoWrapper")} item xs>
+    <div className={cx("container")}>
+      <div className={cx("logoWrapper")}>
         <Logo className={cx("logo")} />
-      </Grid>
-    </Grid>
+      </div>
+      <div className={cx("actionWrapper")}>
+        <ActionHeader />
+      </div>
+      <div className={cx("serviceWrapper")}>
+        <ServiceHeader />
+      </div>
+    </div>
   );
 };

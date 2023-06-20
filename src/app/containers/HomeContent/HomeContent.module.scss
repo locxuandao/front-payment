@@ -1,4 +1,6 @@
 .container {
   background-color: yellow;
-  height: 100%;
+  overflow: scroll;
+  padding: 70px;
+  height: 100vh;
 }

@@ -1,5 +1,23 @@
 .container {
   width: 100%;
-  height: 108px;
+  height: 70px;
+  position: fixed;
   background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  background-color: var(--white-color);
+}
+
+.logoWrapper {
+  padding-left: 170px;
+}
+
+.serviceWrapper {
+  padding-right: 170px;
+}
+
+.actionWrapper {
+  margin-right: 50px;
 }
