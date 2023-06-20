@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: space-between;
+}
+
+.item {
+  margin: 0 30px;
+  &:hover {
+    cursor: pointer;
+    color: var(--action-header-hover);
+  }
+}
+
+.avatar {
+  margin-left: 70px;
+}
