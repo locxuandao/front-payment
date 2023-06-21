@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  background: url("../../../assets/images/backgroundtab.jpg") no-repeat;
+  min-height: 600px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tabPanel {
+}
+
+.tabWrapper {
+  display: flex;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.tabImg {
+  height: 350px;
+}
+
+.contentTab {
+  margin-left: 30px;
+}
+
+.tabHeading {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.tabDes {
+  font-weight: 400;
+  color: #4d6975;
+  margin-bottom: 20px;
+}
+
+.serviceHeading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.button {
+  color: #000;
+  text-transform: none;
+  font-weight: 300;
+  padding: 10px 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #0ba056;
+}
