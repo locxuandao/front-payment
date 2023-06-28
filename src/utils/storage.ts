@@ -10,6 +10,14 @@ const setTokens = (tokens: {}) => {
   localStorage.setItem("tokens", JSON.stringify(tokens));
 };
 
+const setSidebarStatus = (status: {}) => {
+  localStorage.setItem("isOpenSidebar", JSON.stringify(status));
+};
+
+const setUIMode = (mode: string) => {
+  localStorage.setItem("uiMode", mode);
+};
+
 // GET FROM STORAGE
 const getLanguage = () =>
   JSON.parse(localStorage.getItem("language") || '{"":""}');
@@ -25,4 +33,18 @@ const getTokens = () => {
   return JSON.parse(tokens);
 };
 
-export { getLanguage, getTokens, setLanguage, setTokens };
+const getSidebarStatus = () =>
+  JSON.parse(localStorage.getItem("isOpenSidebar") || '{"status":"false"}');
+
+const getUIMode = () => localStorage.getItem("uiMode");
+
+export {
+  getLanguage,
+  getTokens,
+  setLanguage,
+  setTokens,
+  setSidebarStatus,
+  getSidebarStatus,
+  setUIMode,
+  getUIMode,
+};
