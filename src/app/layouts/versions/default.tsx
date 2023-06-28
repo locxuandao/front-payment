@@ -1,15 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import { HomePage } from "app/pages/HomePage";
+import { ServicePage } from "app/pages/ServicePage";
+import { Guards } from "app/pages/Guards";
 import { withAppHeader } from "../hocs";
 
 const Pages = {
-  HomePage: withAppHeader(HomePage),
+  Guards: Guards,
+  ServicePage: withAppHeader(ServicePage),
 };
 
 const Layout = () => {
   return (
     <Routes>
-      <Route path="/" element={<Pages.HomePage />}></Route>
+      <Route path="/" element={<Pages.Guards />}></Route>
+      <Route path="/dich-vu" element={<Pages.ServicePage />}></Route>
     </Routes>
   );
 };
