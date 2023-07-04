@@ -23,7 +23,7 @@ export const HomeApp = () => {
       <div className={cx("content")}>
         <div className={cx("part")}>
           <div className={cx("step")}>
-            <img src={PayIcon} alt="payIcon" />
+            <img src={PayIcon} alt="payIcon" className={cx("icon")} />
             <Typography className={cx("stepHeading")}>
               Thanh toán đa dạng dịch vụ
             </Typography>
@@ -33,7 +33,7 @@ export const HomeApp = () => {
             </Typography>
           </div>
           <div className={cx("step")}>
-            <img src={CheckIcon} alt="checkIcon" />
+            <img src={CheckIcon} alt="checkIcon" className={cx("icon")} />
             <Typography className={cx("stepHeading")}>
               Thao tác đơn giản,thanh toán an toàn
             </Typography>
@@ -50,7 +50,7 @@ export const HomeApp = () => {
 
         <div className={cx("part")}>
           <div className={cx("step")}>
-            <img src={EndowIcon} alt="payIcon" />
+            <img src={EndowIcon} alt="payIcon" className={cx("icon")} />
             <Typography className={cx("stepHeading")}>
               Siêu ưu đãi,mã giảm giá khi thanh toán
             </Typography>
@@ -59,7 +59,7 @@ export const HomeApp = () => {
             </Typography>
           </div>
           <div className={cx("step")}>
-            <img src={ClockIcon} alt="checkIcon" />
+            <img src={ClockIcon} alt="checkIcon" className={cx("icon")} />
             <Typography className={cx("stepHeading")}>
               Nhắc nhở hàng tháng,không lo trễ hạn
             </Typography>
