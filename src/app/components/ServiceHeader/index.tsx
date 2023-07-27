@@ -29,7 +29,7 @@ export const ServiceHeader = () => {
               <div className={cx("poper")}>
                 <div className={cx("profile")}>
                   <Avatar src={userInfo?.avatar} className={cx("avatarIcon")} />
-                  <div className={cx("name")}>{userInfo?.name}</div>
+                  <div className={cx("name")}>{userInfo?.username}</div>
                   <div className={cx("email")}>{userInfo?.email}</div>
                 </div>
                 <div className={cx("setting")}>
@@ -50,13 +50,6 @@ export const ServiceHeader = () => {
               <div className={cx("logout")} onClick={handleLogout}>
                 <Logout className={cx("icon")} />
                 <p>Đăng xuất</p>
-              </div>
-              <div className={cx("description")}>
-                <span className={cx("descItem")}>Privacy</span>
-                <span className={cx("descItem")}>-</span>
-                <span className={cx("descItem")}>Terms</span>
-                <span className={cx("descItem")}>-</span>
-                <span className={cx("descItem")}>Revise © 2023</span>
               </div>
             </div>
           )}
