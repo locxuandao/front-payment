@@ -2,15 +2,13 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import RootLayout from "app/layouts/rootLayout";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { GoogleOAuthProvider } from "@react-oauth/google";
 import { BrowserRouter } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
+import { SnackbarProvider } from "notistack";
 
 import GolobalStyles from "styles/GlobalStyles";
-import configs from "configs";
 
 const queryClient = new QueryClient();
-const clientId = configs.google.clientId;
 
 export function App() {
   const { i18n } = useTranslation();
@@ -26,9 +24,16 @@ export function App() {
 
         <StyledEngineProvider injectFirst>
           <GolobalStyles>
-            <GoogleOAuthProvider clientId={clientId}>
+            <SnackbarProvider
+              maxSnack={3}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              autoHideDuration={2000}
+            >
               <RootLayout />
-            </GoogleOAuthProvider>
+            </SnackbarProvider>
           </GolobalStyles>
         </StyledEngineProvider>
       </BrowserRouter>
