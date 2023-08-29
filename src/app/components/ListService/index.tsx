@@ -14,15 +14,23 @@ export const ListService = () => {
   const handleNavigateWallet = useCallback(() => {
     navigate("/dich-vu/vi");
   }, [navigate]);
+
+  const handleNavigateChat = useCallback(() => {
+    navigate("/chat");
+  }, [navigate]);
+
+  const handleNavigateHistory = useCallback(() => {
+    navigate("/dich-vu/lich-su");
+  }, [navigate]);
   return (
     <div className={cx("container")}>
       <div className={cx("heading")}>Các chức năng dịch vụ</div>
       <div className={cx("listService")}>
-        <div className={cx("part")}>
+        <div className={cx("part")} onClick={handleNavigateChat}>
           <Add className={cx("icon")} />
           <Typography component="p">Tạo giao dịch</Typography>
         </div>
-        <div className={cx("part")}>
+        <div className={cx("part")} onClick={handleNavigateHistory}>
           <History className={cx("icon")} />
           <Typography component="p">Lịch sử</Typography>
         </div>

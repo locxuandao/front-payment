@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+
+.messeageTop {
+  display: flex;
+}
+
+.imgAvatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.textMesseage {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #1877f2;
+  color: white;
+  max-width: 300px;
+}
+
+.messeageBottom {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.own {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.own .textMesseage {
+  background-color: rgb(245, 241, 241);
+  color: #000;
+}

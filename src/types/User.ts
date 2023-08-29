@@ -1,6 +1,10 @@
 export interface User {
   _id: string;
   email: string;
-  fullname: string;
+  username: string;
   number_phone: string;
+}
+
+export interface UserPayload {
+  id: string;
 }

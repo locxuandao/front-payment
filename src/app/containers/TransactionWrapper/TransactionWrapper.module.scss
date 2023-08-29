@@ -1,0 +1,47 @@
+.container {
+  background-color: #ccc;
+  height: 100vh;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+}
+
+.title {
+  font-size: 22px;
+}
+
+.homeNavi {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.homeIcon {
+  margin-right: 6px;
+}
+
+.table {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 30px;
+  min-height: 500px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 2px;
+  left: 40%;
+}
+
+.textFooter {
+  font-size: 12px;
+}

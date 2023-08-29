@@ -19,7 +19,7 @@ export const WalletList = () => {
             <div className={cx("heading")}>Thông tin ví</div>
             <div className={cx("frame")}>
               <Typography className={cx("lable")}>
-                Tên khách hàng : {wallet?.user?.fullname}
+                Tên khách hàng : {wallet?.user?.username}
               </Typography>
             </div>
             <div className={cx("frame")}>
