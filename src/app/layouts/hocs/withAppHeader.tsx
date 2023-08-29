@@ -1,5 +1,6 @@
 import React from "react";
 import { HeaderWrapper } from "app/containers/HeaderWrapper";
+import { Footer } from "app/components/Footer";
 
 const withAppHeader = (WrappedComponent: React.ComponentType) => {
   return (props: JSX.IntrinsicAttributes) => {
@@ -7,6 +8,7 @@ const withAppHeader = (WrappedComponent: React.ComponentType) => {
       <>
         <HeaderWrapper />
         <WrappedComponent {...props} />
+        <Footer />
       </>
     );
   };

@@ -1,0 +1,100 @@
+.container {
+  padding-top: 10px;
+  display: flex;
+  height: 100vh;
+}
+
+.header {
+  border-bottom: 2px solid #1976d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.sideBar {
+  min-width: 400px;
+  border-right: 2px solid #ccc;
+  overflow-y: scroll;
+}
+
+.logoImg {
+  width: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 24px;
+  color: #1976d2;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.searchInput {
+  margin-bottom: 5px;
+}
+
+.listConversation {
+  margin-top: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 10px;
+  position: relative;
+}
+
+.chatBoxWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chatBoxTop {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.inputMesseage {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: none;
+  outline: none;
+  flex: 1;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.chatBoxBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.sendBtn {
+  color: #1976d2;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.noConversation {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  font-size: 50px;
+  color: rgb(224, 220, 220);
+  cursor: default;
+}

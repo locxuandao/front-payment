@@ -16,6 +16,10 @@ export const RegisterWrapper = () => {
   const { mutateAsync } = useRegister();
   const navigate = useNavigate();
 
+  const handleNavigateHome = useCallback(() => {
+    navigate(`/`);
+  }, [navigate]);
+
   const handleRegister = useCallback((data: RegisterFormModel) => {
     (async () => {
       try {
@@ -38,7 +42,7 @@ export const RegisterWrapper = () => {
 
   return (
     <div className={cx("container")}>
-      <div className={cx("heading")}>
+      <div className={cx("heading")} onClick={handleNavigateHome}>
         <img src={logoImg} alt="logo" className={cx("logoImg")} />
         <Typography className={cx("title")}>Spayment</Typography>
       </div>
